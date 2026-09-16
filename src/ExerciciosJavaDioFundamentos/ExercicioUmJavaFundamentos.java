@@ -1,4 +1,5 @@
 package ExerciciosJavaDioFundamentos;
+import java.time.OffsetDateTime;
 import java.util.Scanner;
 
 
@@ -6,6 +7,7 @@ import java.util.Scanner;
 public class ExercicioUmJavaFundamentos {
 
         public static void main(String[] args) {
+            var currentYear = OffsetDateTime.now().getYear();
             Scanner s = new Scanner(System.in);
 
             System.out.println("Ola! Digite seu nome: ");
@@ -14,7 +16,7 @@ public class ExercicioUmJavaFundamentos {
             System.out.println("Agora digite o ano do seu nascimento: ");
             int anoNascimento = s.nextInt();
 
-            int idade = 2026 - anoNascimento;
+            int idade = currentYear - anoNascimento;
 
             System.out.printf("Ola %s voce tem %d anos!", nome, idade);
 
