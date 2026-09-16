@@ -16,5 +16,7 @@ public class ExercicioDoisJavaFundamentos {
 
         System.out.println("A area do quadrado é: " + areaQuadrado);
 
+        s.close();
+
     }
 }
